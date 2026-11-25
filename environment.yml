@@ -1,0 +1,26 @@
+# Conda environment for the Myrciaria dubia chloroplast regulatory-element pipeline.
+# Create with:  conda env create -f environment.yml  &&  conda activate mdubia-cp
+name: mdubia-cp
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.13
+  - pip
+  # scientific Python
+  - numpy>=1.26
+  - pandas>=2.0
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - openpyxl>=3.1
+  - requests>=2.31
+  - biopython>=1.83
+  - viennarna>=2.6          # provides the RNA python module
+  - pycirclize>=1.6
+  # external bioinformatics tools
+  - blast>=2.14             # blastn, makeblastdb
+  - mafft>=7.5
+  - fasttree>=2.1
+  - mummer4>=4.0            # nucmer, show-coords, delta-filter
+  - pip:
+      - pytest>=8.0

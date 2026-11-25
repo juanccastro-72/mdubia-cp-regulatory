@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "mdubia-cp-regulatory: in silico identification of chloroplast regulatory elements in Myrciaria dubia"
+message: "If you use this software, please cite both the software and the associated article."
+type: software
+authors:
+  - family-names: "Castro"
+    given-names: "Juan C."
+    affiliation: "Universidad Nacional de la Amazonía Peruana (UNAP) & Instituto de Investigaciones de la Amazonía Peruana (IIAP), Iquitos, Peru"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/juanccastro-72/mdubia-cp-regulatory"
+license: MIT
+version: "2.0.0"
+date-released: "2026-10-30"
+keywords:
+  - chloroplast genome
+  - Myrciaria dubia
+  - plastid regulatory elements
+  - Myrtaceae
+  - comparative genomics
+  - synteny
+preferred-citation:
+  type: article
+  title: "In silico identification of plastid regulatory elements in the chloroplast genome of Myrciaria dubia (camu-camu) and comparative analysis across Myrtaceae"
+  authors:
+    - family-names: "Castro"
+      given-names: "Juan C."
+  journal: "Plant Molecular Biology"
+  year: 2026

@@ -1,0 +1,21 @@
+# Optional GitHub Actions workflow (continuous integration).
+# The file bridge cannot write ".github/workflows/ci.yml" directly, so its content is here.
+# To enable CI: create the folder  .github\workflows\  and save the text BELOW the line as  ci.yml
+# (CI is optional — the pipeline works without it.)
+# ----------------------------------------------------------------------------
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pandas scipy biopython ViennaRNA pytest
+      - name: Run regression tests
+        run: python -m pytest -q

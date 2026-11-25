@@ -1,0 +1,11 @@
+# pip fallback (install BLAST+, MAFFT, FastTree and MUMmer4 separately, e.g. via conda/apt).
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+openpyxl>=3.1
+requests>=2.31
+biopython>=1.83
+ViennaRNA>=2.6
+pycirclize>=1.6
+pytest>=8.0
